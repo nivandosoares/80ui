@@ -1,0 +1,11 @@
+c:/sealx/david/SPLORER.c:10: seal.h: No such file or directory (ENOENT)
+c:/sealx/david/SPLORER.c:11: menus.h: No such file or directory (ENOENT)
+c:/sealx/david/SPLORER.c:12: app.h: No such file or directory (ENOENT)
+c:/sealx/david/SPLORER.c:13: button.h: No such file or directory (ENOENT)
+c:/sealx/david/SPLORER.c:14: dialogs.h: No such file or directory (ENOENT)
+c:/sealx/david/SPLORER.c:15: iodlg.h: No such file or directory (ENOENT)
+In file included from c:/sealx/david/SPLORER.c:16:
+c:/sealx/david/scroll.h:4: seal.h: No such file or directory (ENOENT)
+c:/sealx/david/scroll.h:5: dialogs.h: No such file or directory (ENOENT)
+c:/sealx/david/scroll.h:6: skin.h: No such file or directory (ENOENT)
+c:/sealx/david/SPLORER.o: No such file or directory (ENOENT)

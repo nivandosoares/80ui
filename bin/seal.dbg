@@ -1,0 +1,463 @@
+
+ - Start Virtual File System 1.00 ...
+   - Prepare Default V Drive
+   - Create Dos drives ...
+   - Drive a:\ installed as /a/ 
+   - Drive c:\ installed as /c/ 
+   - Drive d:\ installed as /d/ 
+   - Drive q:\ installed as /q/ 
+ - Initializing SEAL 2.00.12
+
+
+ - Start registry.
+
+ - Install Allegro.
+  System informations :
+    CPU
+      vendor : AuthenticAMD
+      family : 5 Model : 8
+      fpu : 2 mmx : 4 3dnow :64
+    OS
+      name : W98 
+      version : 4 revision : 10
+
+ - Initialise drivers.
+
+...initializing screen from registry with those parameters :
+ - depth: 16 bits per pixel (65536 colors)
+ - width: 1024
+ - height: 768
+
+Screen is ok
+..initializing the virtual screen   ...initializing virtual screen
+   ...initializing double buffer screen
+   screen and virtual screen were succesfully installed
+  - Load TTF and FNT fonts from path '/system/fonts/'
+   - Load ''/system/fonts/console.fnt'', named ''console''
+   - Load ''/system/fonts/arial.ttf'', named ''arial''
+   - Load ''/system/fonts/symbols.ttf'', named ''symbols''
+  - Install text number 1 ( id 'TXT_YES' ) as "Yes"
+  - Install text number 2 ( id 'TXT_NO' ) as "No"
+  - Install text number 3 ( id 'TXT_OK' ) as "OK"
+  - Install text number 4 ( id 'TXT_CANCEL' ) as "Cancel"
+  - Install text number 5 ( id 'TXT_CLOSE' ) as "Close"
+  - Install text number 6 ( id 'TXT_EXIT' ) as "Exit"
+  - Install text number 7 ( id 'TXT_HELP' ) as "Help"
+  - Install text number 8 ( id 'TXT_ABOUT' ) as "About"
+  - Install text number 9 ( id 'TXT_FILE' ) as "File"
+  - Install text number 10 ( id 'TXT_NEW' ) as "New"
+  - Install text number 11 ( id 'TXT_OPEN' ) as "Open"
+  - Install text number 12 ( id 'TXT_SAVE' ) as "Save"
+  - Install text number 13 ( id 'TXT_SAVE_AS' ) as "Save As..."
+  - Install text number 14 ( id 'TXT_EDIT' ) as "Edit"
+  - Install text number 15 ( id 'TXT_CUT' ) as "Cut"
+  - Install text number 16 ( id 'TXT_COPY' ) as "Copy"
+  - Install text number 17 ( id 'TXT_PASTE' ) as "Paste"
+  - Install text number 18 ( id 'TXT_SEARCH' ) as "Search"
+  - Install text number 19 ( id 'TXT_FIND' ) as "Find"
+  - Install text number 20 ( id 'TXT_FIND_NEXT' ) as "Find Next"
+  - Install text number 21 ( id 'TXT_FIND_AND_REPLACE' ) as "Find and Replace"
+  - Install text number 22 ( id 'TXT_PROGRAMS' ) as "Programs"
+  - Install text number 23 ( id 'TXT_SETTINGS' ) as "Settings"
+  - Install text number 24 ( id 'TXT_DOCUMENTS' ) as "Documents"
+  - Install text number 25 ( id 'TXT_SHUT_DOWN' ) as "Shut Down"
+  - Install text number 26 ( id 'TXT_MAXIMIZE' ) as "Maximize"
+  - Install text number 27 ( id 'TXT_MINIMIZE' ) as "Minimize"
+  - Install text number 28 ( id 'TXT_SHOW' ) as "Show"
+  - Install text number 29 ( id 'TXT_HIDE' ) as "Hide"
+  - Install text number 30 ( id 'TXT_NO_TO_ALL' ) as "No to All"
+  - Install text number 31 ( id 'TXT_YES_TO_ALL' ) as "Yes to All"
+  - Install text number 32 ( id 'TXT_WARNING' ) as "Warning"
+  - Install text number 33 ( id 'TXT_ERROR' ) as "Error"
+  - Install text number 34 ( id 'TXT_INFO' ) as "Info"
+  - Install text number 35 ( id 'TXT_QUESTION' ) as "Question"
+  - Install text number 36 ( id 'TXT_UNAVAIBLE' ) as "Unavailable"
+  - Install text number 37 ( id 'TXT_JANUARY' ) as "January"
+  - Install text number 38 ( id 'TXT_FEBRUARY' ) as "February"
+  - Install text number 39 ( id 'TXT_MARCH' ) as "March"
+  - Install text number 40 ( id 'TXT_APRIL' ) as "April"
+  - Install text number 41 ( id 'TXT_MAY' ) as "May"
+  - Install text number 42 ( id 'TXT_JUNE' ) as "June"
+  - Install text number 43 ( id 'TXT_JULY' ) as "July"
+  - Install text number 44 ( id 'TXT_AUGUST' ) as "August"
+  - Install text number 45 ( id 'TXT_SEPTEMBER' ) as "September"
+  - Install text number 46 ( id 'TXT_OCTOBER' ) as "October"
+  - Install text number 47 ( id 'TXT_NOVEMBER' ) as "November"
+  - Install text number 48 ( id 'TXT_DECEMBER' ) as "December"
+  - Install text number 49 ( id 'TXT_SUNDAY' ) as "Sunday"
+  - Install text number 50 ( id 'TXT_MONDAY' ) as "Monday"
+  - Install text number 51 ( id 'TXT_THUESDAY' ) as "Thuesday"
+  - Install text number 52 ( id 'TXT_WEDNESDAY' ) as "Wednesday"
+  - Install text number 53 ( id 'TXT_THURSDAY' ) as "Thursday"
+  - Install text number 54 ( id 'TXT_FRYDAY' ) as "Friday"
+  - Install text number 55 ( id 'TXT_SATURDAY' ) as "Saturday"
+  - Install text number 56 ( id 'TXT_WELCOME' ) as "Welcome!"
+  - Install text number 57 ( id 'TXT_DIRECTORY' ) as "Directory"
+  - Install text number 58 ( id 'TXT_FILETYPE' ) as "File Type"
+  - Install text number 59 ( id 'TXT_CHANGENAME' ) as "Rename"
+  - Install text number 60 ( id 'TXT_DELETE' ) as "Delete"
+  - Install text number 61 ( id 'TXT_PROPERTIES' ) as "Properties"
+  - Install text number 62 ( id 'TXT_NEWDIRECTORY' ) as "New Directory"
+  - Install text number 63 ( id 'TXT_FILENAME' ) as "Filename"
+  - Install text number 64 ( id 'TXT_DIRNAME' ) as "Directory Name"
+  - Install text number 65 ( id 'TXT_DATE' ) as "Date"
+  - Install text number 66 ( id 'TXT_TIME' ) as "Time"
+  - Install text number 67 ( id 'TXT_SIZE' ) as "Size"
+  - Install text number 68 ( id 'TXT_PATH' ) as "Path"
+  - Install text number 69 ( id 'TXT_NOTFOUND' ) as "Not Found"
+  - Install text number 70 ( id 'TXT_ATTRIB' ) as "Attrib"
+  - Install text number 71 ( id 'TXT_NUMBEROFFILES' ) as "Number of Files"
+  - Install text number 72 ( id 'TXT_NUMBEROFDIRECTORIES' ) as "Number of Directories"
+  - Install text number 73 ( id 'TXT_PROCESSSTATUS' ) as "Process Status"
+  - Install text number 74 ( id 'TXT_DONE' ) as "Done"
+  - Install text number 75 ( id 'TXT_HALTED' ) as "Halted"
+  - Install text number 76 ( id 'TXT_PLEASEWAIT' ) as "Please Wait"
+  - Install text number 77 ( id 'TXT_COPYTOFILE' ) as "Copy to File"
+  - Install text number 78 ( id 'TXT_COPYTODIRECTORY' ) as "Copy to Directory"
+  - Install text number 79 ( id 'TXT_AREYOUSUREYOUWANTTODELETE' ) as "Are you sure you want to delete"
+  - Install text number 80 ( id 'TXT_THESEFILES' ) as "These files"
+  - Install text number 81 ( id 'TXT_AREYOUSUREYOUWANTTOCOPY' ) as "Are you sure you want to copy"
+  - Install text number 82 ( id 'TXT_INTO' ) as "Into"
+  - Install text number 83 ( id 'TXT_COPYINGFILES' ) as "Copying files"
+  - Install text number 84 ( id 'TXT_DELETINGFILES' ) as "Deleting files"
+  - Install text number 85 ( id 'TXT_COPYINGFILESTO' ) as "Copying files to"
+  - Install text number 86 ( id 'TXT_DELETINGFILESFROM' ) as "Deleting files from"
+  - Install text number 87 ( id 'TXT_FILECOULDNTBERENAME' ) as "File couldn't be rename"
+  - Install text number 88 ( id 'TXT_AREYOUSTUPID' ) as "Are you stupid"
+  - Install text number 89 ( id 'TXT_CHECKTHEFILENAMEANDTRYAGAIN' ) as "Check the filename and try again"
+  - Install text number 90 ( id 'TXT_EXIST' ) as "Exist"
+  - Install text number 91 ( id 'TXT_OPENFILE' ) as "Open File"
+  - Install text number 92 ( id 'TXT_SAVEFILEAS' ) as "Save File As"
+  - Install text number 93 ( id 'TXT_WOULDYOULIKETOOVERWRITEIT' ) as "Would you like to overwrite it"
+  - Install text number 94 ( id 'TXT_REFERENCETODIRECTORY' ) as "Reference to directory"
+  - Install text number 95 ( id 'TXT_NOTENOUGHMEMORY' ) as "Not enough memory"
+  - Install text number 96 ( id 'TXT_NOTENOUGHMEMEMORYFOROPERATION' ) as "Not enough memory for operation"
+  - Install text number 97 ( id 'TXT_PLEASESTOREYOURDATAANDEXITSOMEAPPLICATION' ) as "Please store your data and exit some applications"
+  - Install text number 98 ( id 'TXT_CANTRUNFILE' ) as "Can't run file"
+  - Install text number 99 ( id 'TXT_CONVERTTOIMAGE' ) as "Convert to image..."
+  - Install text number 100 ( id 'TXT_VIEWFILE' ) as "View/Open"
+  - Install text number 101 ( id 'TXT_INFOVIEWFILE' ) as "Views the file in the right window or open a directory"
+  - Install text number 102 ( id 'TXT_INFOCONVERTTOIMAGE' ) as "Here you can convert this file format into another file format"
+  - Install text number 103 ( id 'TXT_CONVERTNOW' ) as "Convert Now"
+  - Install text number 104 ( id 'TXT_CLOSEBYALTF4' ) as "Close by Alt+F4"
+  - Install text number 105 ( id 'TXT_IMAGEISCONVRTINGINTOFILE' ) as "Image is converting into file"
+  - Install text number 106 ( id 'TXT_AREYOUSURETOQUITSEAL' ) as "Are you sure to quit SEAL?"
+  - Install text number 0 ( id 'TXT_AREYOUSUREYOUWANTTOENTERSLEEPMODE' ) as "Are you sure to enter sleep mode?"
+  - Install text number 107 ( id 'TXT_DISPLAY' ) as "Display"
+  - Install text number 108 ( id 'TXT_DISPLAYSETTINGS' ) as "Display Settings"
+  - Install text number 109 ( id 'TXT_DISPLAYINFO' ) as "Display Settings: Wallpaper, skins, effects, language, etc"
+  - Install text number 110 ( id 'TXT_HARDWARE' ) as "Hardware"
+  - Install text number 111 ( id 'TXT_HARDWARESETTINGS' ) as "Hardware Settings"
+  - Install text number 112 ( id 'TXT_HARDWAREINFO' ) as "Hardware Settings : Sound, keyboard, screen resolution, etc"
+  - Install text number 113 ( id 'TXT_CONTROL_PANEL' ) as "Control Panel"
+  - Install text number 114 ( id 'TXT_COLOR' ) as "colour"
+  - Install text number 115 ( id 'TXT_CHANGE' ) as "change"
+  - Install text number 116 ( id 'TXT_OTHER' ) as "other"
+  - Install text number 117 ( id 'TXT__OTHER_' ) as "( other )"
+  - Install text number 118 ( id 'TXT__NONE_' ) as "( none )"
+  - Install text number 119 ( id 'TXT_SYSTEM_COLORS' ) as "System Colours"
+  - Install text number 120 ( id 'TXT_PATERN' ) as "pattern"
+  - Install text number 121 ( id 'TXT_STRETCH' ) as "stretch"
+  - Install text number 122 ( id 'TXT_CENTER' ) as "centre"
+  - Install text number 123 ( id 'TXT_WALLPAPER' ) as "Wallpaper"
+  - Install text number 124 ( id 'TXT_WALLPAPER_ALIGN' ) as "Display"
+  - Install text number 125 ( id 'TXT_DESKTOP_WALLPAPER' ) as "Desktop Wallpaper"
+  - Install text number 126 ( id 'TXT_SCREEN_SAVER' ) as "Screen Saver"
+  - Install text number 127 ( id 'TXT_TEST' ) as "test"
+  - Install text number 128 ( id 'TXT_WAIT__SEC_' ) as "Wait (sec)"
+  - Install text number 129 ( id 'TXT_GRAPHICS_EFFECTS_AND_SKINS' ) as "Graphics Effects and Skins"
+  - Install text number 130 ( id 'TXT_SKIN_SELECTROR' ) as "Skin Selector"
+  - Install text number 131 ( id 'TXT_TRANSLUCIDE_LEVEL' ) as "Transparency Level"
+  - Install text number 132 ( id 'TXT_PREVIEW' ) as "Preview"
+  - Install text number 133 ( id 'TXT_COMPUTER' ) as "Computer"
+  - Install text number 134 ( id 'TXT_SCREEN_DEFINITION' ) as "Screen Resolution"
+  - Install text number 135 ( id 'TXT_SCREEN_SIZE' ) as "Screen Size"
+  - Install text number 136 ( id 'TXT_SCREEN_DEPTH' ) as "Screen Depth"
+  - Install text number 137 ( id 'TXT_SCREEN_DBL_BUFFER_INFO' ) as "Use double-buffer (better graphics)"
+  - Install text number 138 ( id 'TXT_RESTART' ) as "Restart"
+   Drivers :: Load the libexportable.
+Sound init: init sound...
+Sound init: voices reserved.
+Sound init: Installing sound...   sound installed!
+Sound init: volume set
+...initializing mouse object
+ - found 2 button's mouse
+   mouse was succesfull installed at speed 2
+    Initializing skin system...
+SKIN: getting skin version
+SKIN: counting ini sections
+SKIN: checking ini sections
+SKIN: initializing 'skin' struct...
+SKIN: loading skin sections
+SKIN:    0. ActiveWindow
+SKIN:    1. InactiveWindow
+SKIN:    2. ActiveTitleBar
+SKIN:    3. InactiveTitleBar
+SKIN:    4. CloseButton
+SKIN:    5. CloseButtonDown
+SKIN:    6. MaximizeButton
+SKIN:    7. MaximizeButtonDown
+SKIN:    8. MinimizeButton
+SKIN:    9. MinimizeButtonDown
+SKIN:    10. Button
+SKIN:    11. PressedButton
+SKIN:    12. HoverButton
+SKIN:    13. InputBox
+SKIN:    14. vScrollBar
+SKIN:    15. hScrollBar
+SKIN:    16. HScrollBarBackground
+SKIN:    17. VScrollBarBackground
+SKIN:    18. ScrollButtonLeft
+SKIN:    19. ScrollButtonLeftDown
+SKIN:    20. ScrollButtonRight
+SKIN:    21. ScrollButtonRightDown
+SKIN:    22. ScrollButtonDown
+SKIN:    23. ScrollButtonDownDown
+SKIN:    24. ScrollButtonUp
+SKIN:    25. ScrollButtonUpDown
+SKIN: loading skin info
+SKIN: calculating base dir
+SKIN:   basedir = 'skin/qube2/'
+SKIN: loading skin item 'ActiveWindow'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'InactiveWindow'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ActiveTitleBar'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'InactiveTitleBar'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'CloseButton'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'CloseButtonDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'MaximizeButton'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'MaximizeButtonDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'MinimizeButton'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'MinimizeButtonDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'Button'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'PressedButton'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'HoverButton'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'InputBox'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'vScrollBar'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'hScrollBar'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'HScrollBarBackground'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'VScrollBarBackground'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonLeft'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonLeftDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonRight'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonRightDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonDownDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonUp'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading skin item 'ScrollButtonUpDown'
+SKIN: skinfile exists
+SKIN: Will look for alignment
+SKIN: Got textcolor.
+SKIN: skin item loaded
+SKIN: loading colours information
+SKIN: colour loaded named 'desktop_background': R: 100 G: 100 B: 100
+SKIN: colour loaded named 'text': R: 0 G: 0 B: 0
+SKIN: colour loaded named '3d_face': R: 66 G: 82 B: 90
+SKIN: colour loaded named '3d_light': R: 85 G: 103 B: 111
+SKIN: colour loaded named '3d_shadow': R: 50 G: 61 B: 66
+SKIN: colour loaded named '3d_dark': R: 33 G: 40 B: 43
+SKIN: colour loaded named '3d_border': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'flat_background': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'flat_border': R: 33 G: 40 B: 43
+SKIN: colour loaded named 'edit_text': R: 0 G: 255 B: 0
+SKIN: colour loaded named 'edit_selected': R: 0 G: 255 B: 0
+SKIN: colour loaded named 'edit_selected_text': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'menu_caption': R: 200 G: 200 B: 200
+SKIN: colour loaded named 'menu_selected': R: 64 G: 64 B: 64
+SKIN: colour loaded named 'menu_selected_gradient': R: 150 G: 150 B: 150
+SKIN: colour loaded named 'menu_selected_3d_light': R: 157 G: 175 B: 193
+SKIN: colour loaded named 'menu_selected_3d_dark': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'taskbar_button_face': R: 60 G: 126 B: 193
+SKIN: colour loaded named 'taskbar_button_light': R: 157 G: 175 B: 193
+SKIN: colour loaded named 'taskbar_button_shadow': R: 7 G: 43 B: 81
+SKIN: colour loaded named 'taskbar_button_dark': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'taskbar_button_caption': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'taskbar_selected_face': R: 60 G: 126 B: 193
+SKIN: colour loaded named 'taskbar_selected_caption': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'highlight': R: 60 G: 70 B: 90
+SKIN: colour loaded named 'highlight_text': R: 189 G: 198 B: 198
+SKIN: colour loaded named 'iconbox_text': R: 200 G: 200 B: 200
+SKIN: colour loaded named 'filebox': R: 0 G: 0 B: 0
+SKIN: colour loaded named 'filebox_text': R: 0 G: 255 B: 0
+SKIN: Colours loaded
+SKIN: done
+      Skin loaded
+
+  - Run all registry entries from 'system/startup/drivers'
+    Run :: /system/libs/sfamp3.xdl
+Run /system/libs/sfamp3.xdl with (null) args
+XDL :: Start running /system/libs/sfamp3.xdl (MP3 Codec) XDL -392092838913674994 - 180269056 free memory bytes
+    Run :: /system/libs/sfamidi.xdl
+Run /system/libs/sfamidi.xdl with (null) args
+XDL :: Start running /system/libs/sfamidi.xdl (MIDI Driver) XDL -7510761261782934534 - 180269056 free memory bytes
+    Run :: /system/libs/sfamod.xdl
+Run /system/libs/sfamod.xdl with (null) args
+XDL :: Start running /system/libs/sfamod.xdl (MOD Driver) XDL 15029603341761477184 - 180264960 free memory bytes
+    Run :: /system/libs/sfawav.xdl
+Run /system/libs/sfawav.xdl with (null) args
+XDL :: Start running /system/libs/sfawav.xdl (WAV Driver) XDL -2069637746-842129686 - 180264960 free memory bytes
+ScreenSaver settings : ./fire.sss 120
+
+  - Run all registry entries from 'system/startup/load'
+    Run :: /system/libs/sscript.xdl
+    Run :: /system/libs/badctrls.xdl
+Run /system/libs/badctrls.xdl with (null) args
+XDL :: Start running /system/libs/badctrls.xdl (Bad Controls 0.4.2) XDL 1068739646589481922 - 180264960 free memory bytes
+    Run :: /system/libs/print.xdl
+Run /system/libs/print.xdl with (null) args
+XDL :: Start running /system/libs/print.xdl (SEAL Printing API) XDL 1013610128-73883002 - 180264960 free memory bytes
+    Run :: /system/libs/cp.xdl
+Run /system/libs/cp.xdl with (null) args
+XDL :: Start running /system/libs/cp.xdl (Control Panel 1.1) XDL 45872850-385246173 - 180264960 free memory bytes
+    Run :: /system/libs/ss.xdl
+Run /system/libs/ss.xdl with (null) args
+XDL :: Start running /system/libs/ss.xdl (Screen Settings) XDL -8057099221222051508 - 180264960 free memory bytes
+    Run :: /system/libs/ds.xdl
+Run /system/libs/ds.xdl with (null) args
+XDL :: Start running /system/libs/ds.xdl (Desktop wallpaper Settings) XDL 799406990-986674703 - 180264960 free memory bytes
+    Run :: /system/libs/helpsys.xdl
+Run /system/libs/helpsys.xdl with (null) args
+XDL :: Start running /system/libs/helpsys.xdl (HELP) XDL -1711762786-403687726 - 180264960 free memory bytes
+    Run :: /system/libs/effect.xdl
+Run /system/libs/effect.xdl with (null) args
+XDL :: Start running /system/libs/effect.xdl (Graphics settings) XDL -16932585461778426470 - 180264960 free memory bytes
+    Run :: /system/desktop.s2a
+Run /system/desktop.s2a with (null) args
+XDL :: Start running /system/desktop.s2a (The Desktop) XDL -1995464414-219941919 - 180264960 free memory bytes
+drive with number 0 found.
+HDM: 0
+           - Icon in list, a ...
+drive with number 2 found.
+HDM: 1
+Loading of drivemeter for 2 done.
+Percent of disk free: -1262264636
+           - Icon in list, c ...
+drive with number 3 found.
+HDM: 1
+Loading of drivemeter for 3 done.
+Percent of disk free: 0
+           - Icon in list, d ...
+drive with number 16 found.
+HDM: 0
+           - Icon in list, q ...
+HDM: 2009213047
+           - Icon in list, documents ...
+HDM: 2009213047
+           - Icon in list, programs ...
+HDM: 2009213047
+           - Icon in list, system ...
+    Run :: /system/libs/as.xdl
+Run /system/libs/as.xdl with (null) args
+XDL :: Start running /system/libs/as.xdl (System colors selector) XDL -1786007138-1058956350 - 180264960 free memory bytes
+    Run :: /system/libs/ssc.xdl
+Run /system/libs/ssc.xdl with (null) args
+XDL :: Start running /system/libs/ssc.xdl (Screen saver chooser) XDL 1040257230-346335225 - 180264960 free memory bytes
+    Run :: /system/libs/volctrl.xdl
+Run /system/libs/volctrl.xdl with (null) args
+XDL :: Start running /system/libs/volctrl.xdl (Volume Control Panel) XDL -1390194381522513970 - 180264960 free memory bytes
+    Run :: /system/libs/m.xdl
+Run /system/libs/m.xdl with (null) args
+XDL :: Start running /system/libs/m.xdl (Mouse Settings) XDL -13563248741543638109 - 180264960 free memory bytes
+    Run :: /system/libs/cards.xdl
+Run /system/libs/cards.xdl with (null) args
+XDL :: Start running /system/libs/cards.xdl (Card drawing library v1.1) XDL 1862765934-925126259 - 180264960 free memory bytes
+ - Initialisation finished.

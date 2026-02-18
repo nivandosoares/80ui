@@ -1,0 +1,17 @@
+DLXUSE_BEGIN
+  LIBLOADS_BEGIN
+  LIBLOADS_END
+  LIBEXPORT_BEGIN
+    LIBEXPORT(add_to_userbox)
+    LIBEXPORT(remove_from_userbox)
+    LIBEXPORT(menu_load_from_dir) 
+    LIBEXPORT(filemenu_trans)
+    LIBEXPORT(get_the_file_text)
+    LIBEXPORT(get_the_file_des)
+    LIBEXPORT(get_the_file_ico)
+    LIBEXPORT(get_the_file_ico32)
+    LIBEXPORT(get_the_file_visible)
+    LIBEXPORT(set_the_file_ext)
+    LIBEXPORT_END
+DLXUSE_END
+

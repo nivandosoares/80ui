@@ -1,0 +1,5 @@
+[definition]
+link="/programs/seal/sregedit.s2a"
+icon16="/system/bmp/icons/regedit.ico,16"
+icon32="/system/bmp/icons/regedit.ico,32"
+title="Registry Editor"

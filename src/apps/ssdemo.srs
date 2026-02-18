@@ -1,0 +1,12 @@
+[SRS]
+Version=1
+
+[Version]
+Major=0
+Minor=1
+Revision=1
+Build=0
+AutoIncrementBuild=1
+
+; If AutoIncrementBuild is set to 1, the Build value is increased by 1 every time
+; you link the file

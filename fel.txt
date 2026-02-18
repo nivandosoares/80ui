@@ -1,0 +1,20 @@
+In file included from src/engine.exp:1657,
+                 from src/engine.c:371:
+src/allegro.exp:701: `ustrnicmp' undeclared here (not in a function)
+src/allegro.exp:701: initializer element is not constant
+src/allegro.exp:701: (near initialization for `_LIBEXPORTTABLE[4405]')
+src/allegro.exp:1213: `_set_current_refresh_rate' undeclared here (not in a function)
+src/allegro.exp:1213: initializer element is not constant
+src/allegro.exp:1213: (near initialization for `_LIBEXPORTTABLE[5429]')
+src/allegro.exp:1229: `_switch_in' undeclared here (not in a function)
+src/allegro.exp:1229: initializer element is not constant
+src/allegro.exp:1229: (near initialization for `_LIBEXPORTTABLE[5461]')
+src/allegro.exp:1230: `_switch_out' undeclared here (not in a function)
+src/allegro.exp:1230: initializer element is not constant
+src/allegro.exp:1230: (near initialization for `_LIBEXPORTTABLE[5463]')
+src/allegro.exp:1238: `_vsync_speed' undeclared here (not in a function)
+src/allegro.exp:1238: initializer element is not constant
+src/allegro.exp:1238: (near initialization for `_LIBEXPORTTABLE[5479]')
+src/engine.c: In function `program_init':
+src/engine.c:887: warning: passing arg 2 of pointer to function makes pointer from integer without a cast
+make.exe: *** [obj/engine.o] Error 1

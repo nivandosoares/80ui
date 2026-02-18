@@ -1,0 +1,14 @@
+DLXUSE_BEGIN
+  LIBLOADS_BEGIN
+  LIBLOADS_END
+  LIBEXPORT_BEGIN
+    LIBEXPORT(sscript_done) 
+    LIBEXPORT(_sscript_init) 
+    LIBEXPORT(sscript_set_code) 
+    LIBEXPORT(sscript_compile) 
+    LIBEXPORT(sscript_define_command) 
+    LIBEXPORT(sscript_execute) 
+    LIBEXPORT(sscript_init) 
+  LIBEXPORT_END
+DLXUSE_END
+

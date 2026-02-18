@@ -1,0 +1,356 @@
+
+[USERS/DEFAULT]
+SEAL="SEAL Settings"
+DESKTOP=(nodata)
+
+[USERS/DEFAULT/SEAL]
+COLORS="System Colours"
+IMAGES="SEAL Global Images Dir"
+OPTICAL="Optical Effects Configuration (optimalization)"
+SKIN="Skin Settings"
+SCREENSAVER="Screen Saver Settings"
+
+[USERS/DEFAULT/SEAL/COLORS]
+FLAT_FACE="255,255,255"
+FLAT_BORDER="0,0,0"
+FLAT_TEXT="0,0,0"
+3D_FACE="197,194,197"
+3D_LIGHT="230,255,255"
+3D_SHADOW="131,129,131"
+3D_DARK="65,64,65"
+3D_BORDER="0,0,0"
+3D_TEXT="0,0,0"
+SELECTED_FACE="65,64,255"
+SELECTED_TEXT="255,255,255"
+DESKTOP_FACE="8,190,246"
+DESKTOP_TEXT="0,0,0"
+MENU_FACE="197,194,197"
+MENU_FACE_GARDIENT="222,222,222"
+MENU_TEXT="0,0,0"
+MENU_SELECTED_FACE="255,121,82"
+MENU_SELECTED_FACE_GARDIENT="255,121,82"
+MENU_SELECTED_TEXT="255,255,255"
+DESKBAR_FACE="197,194,197"
+DESKBAR_LIGHT="230,255,255"
+DESKBAR_SHADOW="131,129,131"
+DESKBAR_DARK="0,0,0"
+DESKBAR_BORDER="0,0,0"
+DESKBAR_TEXT="0,0,0"
+DESKBAR_SELECTED_FACE="230,246,246"
+DESKBAR_SELECTED_TEXT="0,0,0"
+WINDOW_ACT_TITLE_TEXT="255,255,255"
+WINDOW_ACT_TITLE_FACE="255,121,82"
+WINDOW_ACT_TITLE_FACE_GARDIENT="255,255,65"
+WINDOW_PASS_TITLE_TEXT="0,0,0"
+WINDOW_PASS_TITLE_FACE="197,194,197"
+WINDOW_PASS_TITLE_FACE_GARDIENT="115,113,115"
+taskbar_button_face="192,192,192"
+taskbar_button_light="255,255,255"
+taskbar_button_shadow="128,128,128"
+taskbar_button_dark="64,64,64"
+taskbar_button_caption="0,0,0"
+taskbar_selected_face="212,212,212"
+taskbar_selected_caption="0,0,0"
+
+[USERS/DEFAULT/SEAL/IMAGES]
+IMG_FILE16="bmp/icons/file.ico,16"
+IMG_FILE32="bmp/icons/file.ico,32"
+IMG_DIR16="bmp/icons/dir.ico,16"
+IMG_DIR32="bmp/icons/dir.ico,32"
+IMG_WARNING="bmp/bitmaps/msg0.bmp"
+IMG_ERROR="bmp/bitmaps/msg1.bmp"
+IMG_INFO="bmp/bitmaps/msg2.bmp"
+IMG_QUESTION="bmp/bitmaps/msg3.bmp"
+IMG_UNAVAILABLE="bmp/bitmaps/msg4.bmp"
+IMG_SETUP="bmp/bitmaps/msg5.bmp"
+IMG_WMAX="bmp/bitmaps/max.bmp"
+IMG_WMIN="bmp/bitmaps/min.bmp"
+IMG_WCLOSE="bmp/bitmaps/close.bmp"
+IMG_ABOUT="bmp/bitmaps/about.bmp"
+IMG_APP16="bmp/icons/app.ico,16"
+IMG_APP32="bmp/icons/app.ico,32"
+IMG_PARDIRBT="bmp/bitmaps/pardir.bmp"
+IMG_DWMAX="bmp/bitmaps/dmax.bmp"
+IMG_DWMIN="bmp/bitmaps/dmin.bmp"
+IMG_DWCLOSE="bmp/bitmaps/dclose.bmp"
+IMG_DABOUT="bmp/bitmaps/dabout.bmp"
+sealmenu_image="/system/bmp/bitmaps/sealbtn.bmp"
+
+[USERS/DEFAULT/SEAL/OPTICAL]
+SCROLL_NICE=1
+MOVE_WINDOW_CONTEXT=1
+ENABLE_MOVE_ACCELERATION=1
+CLOCK_INCLUDING=1
+TRANSLUCIDE=2
+TASKBAR_ALONE=0
+
+[USERS/DEFAULT/SEAL/SKIN]
+FILE="skin/Qube.skn"
+USE=1
+
+[USERS/DEFAULT/SEAL/SCREENSAVER]
+APP="./fire.sss"
+DIF=120
+
+[USERS/DEFAULT/DESKTOP]
+PLACEMENT=1
+BARPOS=0
+WALLPAPER="wallpapr/seal2wp.jpg"
+
+[CURRENT]
+SEAL="SEAL Settings"
+DESKTOP=(nodata)
+
+[USERS/DEFAULT/SEAL]
+COLORS="System Colours"
+IMAGES="SEAL Global Images Dir"
+OPTICAL="Optical Effects Configuration (optimalization)"
+SKIN="Skin Settings"
+SCREENSAVER="unassigned value"
+
+[USERS/DEFAULT/SEAL/COLORS]
+FLAT_FACE="255,255,255"
+FLAT_BORDER="0,0,0"
+FLAT_TEXT="0,0,0"
+3D_FACE="197,194,197"
+3D_LIGHT="230,255,255"
+3D_SHADOW="131,129,131"
+3D_DARK="65,64,65"
+3D_BORDER="0,0,0"
+3D_TEXT="0,0,0"
+SELECTED_FACE="65,64,255"
+SELECTED_TEXT="255,255,255"
+DESKTOP_FACE="8,190,246"
+DESKTOP_TEXT="0,0,0"
+MENU_FACE="197,194,197"
+MENU_FACE_GARDIENT="222,222,222"
+MENU_TEXT="0,0,0"
+MENU_SELECTED_FACE="255,121,82"
+MENU_SELECTED_FACE_GARDIENT="255,121,82"
+MENU_SELECTED_TEXT="255,255,255"
+DESKBAR_FACE="197,194,197"
+DESKBAR_LIGHT="230,255,255"
+DESKBAR_SHADOW="131,129,131"
+DESKBAR_DARK="0,0,0"
+DESKBAR_BORDER="0,0,0"
+DESKBAR_TEXT="0,0,0"
+DESKBAR_SELECTED_FACE="230,246,246"
+DESKBAR_SELECTED_TEXT="0,0,0"
+WINDOW_ACT_TITLE_TEXT="255,255,255"
+WINDOW_ACT_TITLE_FACE="255,121,82"
+WINDOW_ACT_TITLE_FACE_GARDIENT="255,255,65"
+WINDOW_PASS_TITLE_TEXT="0,0,0"
+WINDOW_PASS_TITLE_FACE="197,194,197"
+WINDOW_PASS_TITLE_FACE_GARDIENT="115,113,115"
+taskbar_button_face="192,192,192"
+taskbar_button_light="255,255,255"
+taskbar_button_shadow="128,128,128"
+taskbar_button_dark="64,64,64"
+taskbar_button_caption="0,0,0"
+taskbar_selected_face="212,212,212"
+taskbar_selected_caption="0,0,0"
+
+[USERS/DEFAULT/SEAL/IMAGES]
+IMG_FILE16="bmp/icons/file.ico,16"
+IMG_FILE32="bmp/icons/file.ico,32"
+IMG_DIR16="bmp/icons/dir.ico,16"
+IMG_DIR32="bmp/icons/dir.ico,32"
+IMG_WARNING="bmp/bitmaps/msg0.bmp"
+IMG_ERROR="bmp/bitmaps/msg1.bmp"
+IMG_INFO="bmp/bitmaps/msg2.bmp"
+IMG_QUESTION="bmp/bitmaps/msg3.bmp"
+IMG_UNAVAILABLE="bmp/bitmaps/msg4.bmp"
+IMG_SETUP="bmp/bitmaps/msg5.bmp"
+IMG_WMAX="bmp/bitmaps/max.bmp"
+IMG_WMIN="bmp/bitmaps/min.bmp"
+IMG_WCLOSE="bmp/bitmaps/close.bmp"
+IMG_ABOUT="bmp/bitmaps/about.bmp"
+IMG_APP16="bmp/icons/app.ico,16"
+IMG_APP32="bmp/icons/app.ico,32"
+IMG_PARDIRBT="bmp/bitmaps/pardir.bmp"
+IMG_DWMAX="bmp/bitmaps/dmax.bmp"
+IMG_DWMIN="bmp/bitmaps/dmin.bmp"
+IMG_DWCLOSE="bmp/bitmaps/dclose.bmp"
+IMG_DABOUT="bmp/bitmaps/dabout.bmp"
+sealmenu_image="/system/bmp/bitmaps/sealbtn.bmp"
+
+[USERS/DEFAULT/SEAL/OPTICAL]
+SCROLL_NICE=1
+MOVE_WINDOW_CONTEXT=1
+ENABLE_MOVE_ACCELERATION=1
+CLOCK_INCLUDING=1
+TASKBAR_ALONE=0
+TRANSLUCIDE=2
+
+[USERS/DEFAULT/SEAL/SKIN]
+FILE="skin/Qube.skn"
+USE=1
+
+[USERS/DEFAULT/SEAL/SCREENSAVER]
+APP="./fire.sss"
+DIF=120
+
+[USERS/DEFAULT/DESKTOP]
+PLACEMENT=1
+BARPOS=0
+WALLPAPER="wallpapr/seal2wp.jpg"
+
+[SYSTEM]
+MOUSE="Mouse Settings"
+CURSORS="System Cursors"
+LANGUAGE="Language Settings"
+FILETYPES="File Associations"
+GRAPHICS="Graphics Options (resolution, colour depth, etc)"
+STARTUP="Startup Applications"
+
+[SYSTEM/MOUSE]
+SPEED=2
+DBLCLICK=500
+
+[SYSTEM/CURSORS]
+ARROW="cursors/arrow.cur"
+MOVE="cursors/move.cur"
+GROW="cursors/size2.cur"
+TEXT="cursors/beam.cur"
+CLOCK="cursors/busy.cur"
+PENCIL="cursors/pen.cur"
+STOP="cursors/no.cur"
+SCRUP="cursors/size1.cur"
+SCDDN="cursors/size2.cur"
+SCRLF="cursors/size3.cur"
+SCRRG="cursors/size4.cur"
+
+[SYSTEM/LANGUAGE]
+LNGFILE="lng.ini"
+LNG="en"
+
+[SYSTEM/FILETYPES]
+TXT="Text files"
+MP3="MP3 file"
+MP2="MP2 file"
+MOD="MOD file"
+S3M="S3M (MOD) file"
+MID="MIDI file"
+XM="XM (MOD) file"
+IT="IT (MOD) file"
+JGM="JGMOD file"
+WAV="WAVE file"
+HLP="Help File"
+EXE="DOS executable"
+COM="DOS command"
+BAT="DOS batch file"
+FOLDER="Folder"
+
+[SYSTEM/FILETYPES/TXT]
+LOADER="/programs/seal/smalldit.s2a"
+ICON16="bmp/icons/txt.ico,16"
+ICON32="bmp/icons/txt.ico,32"
+MIME="text/plain"
+
+[SYSTEM/FILETYPES/MP3]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+MIME="audio/mpeg"
+
+[SYSTEM/FILETYPES/MP2]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+MIME="audio/mpeg"
+
+[SYSTEM/FILETYPES/MOD]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+MIME="application/x-multiplan"
+; The above is what Winamp sets the MIME type for .MOD to, so we'll do the same, odd
+; as it may be...
+
+[SYSTEM/FILETYPES/S3M]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+
+[SYSTEM/FILETYPES/MID]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+MIME="audio/mid"
+
+[SYSTEM/FILETYPES/XM]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+
+[SYSTEM/FILETYPES/IT]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+
+[SYSTEM/FILETYPES/JGM]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+
+[SYSTEM/FILETYPES/WAV]
+LOADER="/programs/seal/player.s2a"
+ICON16="bmp/icons/snd.ico,16"
+ICON32="bmp/icons/snd.ico,32"
+MIME="audio/wav"
+
+[SYSTEM/FILETYPES/HLP]
+LOADER="/programs/seal/help.s2a"
+ICON16="bmp/icons/help.ico,16"
+ICON32="bmp/icons/help.ico,32"
+
+[SYSTEM/FILETYPES/EXE]
+LOADER="sealdos.s2a"
+ICON16="bmp/icons/app.ico,16"
+ICON32="bmp/icons/app.ico,32"
+MIME="application/x-msdownload"
+
+[SYSTEM/FILETYPES/COM]
+LOADER="sealdos.s2a"
+ICON16="bmp/icons/app.ico,16"
+ICON32="bmp/icons/app.ico,32"
+
+[SYSTEM/FILETYPES/BAT]
+LOADER="sealdos.s2a"
+ICON16="bmp/icons/app.ico,16"
+ICON32="bmp/icons/app.ico,32"
+
+[SYSTEM/FILETYPES/FOLDER]
+LOADER="/programs/seal/dc.s2a"
+
+[SYSTEM/GRAPHICS]
+WIDTH=640
+HEIGHT=480
+DEPTH=16
+DOUBLE_BUFFER=1
+
+[SYSTEM/STARTUP]
+LOAD=""
+DRIVERS=""
+
+[SYSTEM/STARTUP/LOAD]
+SSCRIPT="/system/libs/sscript.xdl"
+BADCTRLS="/system/libs/badctrls.xdl"
+PRINT="/system/libs/print.xdl"
+CP="/system/libs/cp.xdl"
+SS="/system/libs/ss.xdl"
+DS="/system/libs/ds.xdl"
+HELPSYS="/system/libs/helpsys.xdl"
+GRAPH="/system/libs/effect.xdl"
+DESKTOP="/system/desktop.s2a"
+AS="/system/libs/as.xdl"
+SSC="/system/libs/ssc.xdl"
+VOLUME="/system/libs/volctrl.xdl"
+MOUSE="/system/libs/m.xdl"
+CARDS="/system/libs/cards.xdl"
+
+[SYSTEM/STARTUP/DRIVERS]
+MP3="/system/libs/sfamp3.xdl"
+MIDI="/system/libs/sfamidi.xdl"
+MOD="/system/libs/sfamod.xdl"
+WAV="/system/libs/sfawav.xdl"

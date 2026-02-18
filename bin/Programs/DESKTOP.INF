@@ -1,0 +1,27 @@
+; This is an information file for Bad Desktop
+
+[desktop]
+validate="1"
+
+[DESKTOP.INF]
+hide="1"
+
+[DEV]
+name="Development Tools"
+des="Tools to help you develop programs for SEAL"
+
+[GAMES]
+name="Games"
+des="Some fun and challenging games to play"
+
+[MEDIA]
+name="Multimedia"
+des="Multimedia applications that let you listen to music, look at pictures, and more!"
+
+[OFFICE]
+name="Office Tools"
+des="Tools to help you with common day-to-day tasks"
+
+[TOOLS]
+name="System Tools"
+des="Tools that let you browse your system and modify advanced settings"

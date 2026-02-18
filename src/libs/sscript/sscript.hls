@@ -1,0 +1,295 @@
+.topic main
+<b>SealScript Library 0.1 reference</b><br>
+<br>
+Table of contents:<br>
+<br>
+  1. <l intro>Introduction<le><br>
+  2. <l using>Using SealScript<le><br>
+  3. <l newcmd>Defining new commands<le><br>
+  4. <l errors>Error handling<le><br>
+  5. <l cmds>SealScript standard commands<le><br>
+<br>
+<br>
+SealScript 0.1 (C) 2001 Kostas Michalopoulos<br>
+.end
+
+.topic intro
+<b>1. Introduction</b><br>
+<br>
+<b>What is SealScript Library?</b><br>
+  SSL Is a DLX library for SEAL/Bad Seal
+ that can add scripting abilities
+ to any program using simple methods.
+ It's BASIC-like syntax, it's incredible speed and
+ it's customizability makes SealScript Library the
+ best choice for your SEAL/Bad Seal application
+ and except that, you don't have to make your own
+ scripting functions ;).<br>
+<br>
+For a full example see SSDEMO.C included with SealScript.
+.end
+
+.topic using
+<b>2. Using SealScript</b><br>
+<br>
+  To use SealScript Library with your programs is
+ very simple. Just include sscript.h file with
+ your program like this:<br>
+<br>
+#include "allegro.h"<br>
+#include "seal.h"<br>
+#include "sscript.h"<br>
+/* other includes */<br>
+<br>
+and define a SealScript object like this:<br>
+<br>
+p_sscript ss = NULL;<br>
+<br>
+then when you initialize your application,<br>
+initialize this SealScript object like this:<br>
+<br>
+ss = sscript_init(malloc(sizeof(t_sscript)));<br>
+<br>
+and in app_begin - app_end add this:<br>
+<br>
+if (ap_process == AP_DONE) {<br>
+  OBJECT(ss)->done(OBJECT(ss);<br>
+  free(ss);<br>
+};<br>
+<br>
+  Before doing anything else you must set some
+ SealScript code to the object. To do that use
+ the set_code function like this:<br>
+<br>
+ss->set_code(ss, "' SealScript code goes here");<br>
+<br>
+you can take code from a t_editor box like this:<br>
+<br>
+ss->set_code(ss, editor->text);<br>
+<br>
+<br>
+  Then when you want to run this code you MUST
+compile it first using the compile function:<br>
+<br>
+ss->compile(ss);<br>
+<br>
+and then the execute function to run it:<br>
+<br>
+ss->execute(ss);<br>
+<br>
+Note: you can use compile function also to
+make syntax error checking because compile
+return some codes (see <l errors>section 4<le>).<br>
+.end
+
+.topic newcmd
+<b>3. Defining new commands</b><br>
+<br>
+  SealScript's standard commands aren't enough. They
+ are only the very basics for very simple scripts
+ and in most cases you'll need to define your own
+ commands. To do that you have to use the
+ define_command function like this:<br>
+<br>
+ss->define_command(ss, command_name, &command_proc);<br>
+<br>
+ where command_name is a normal valid SEAL string
+ (l_text) that defines new command's name and
+ command_proc is a function that will be called when
+ this command is executed. command_proc must be in
+ this "format":<br>
+<br>
+void command_proc(l_int args, l_text arg[]);<br>
+<br>
+ where args is the number of given arguments and arg
+ is an array that contains all given arguments. If an
+ argument is a variable, arg contains the value of
+ this variable.<br>
+<br>
+example:<br>
+<br>
+#include "allegro.h"<br>
+#include "seal.h"<br>
+#include "sscript.h"<br>
+#include "sfa.h" /* i guess... i don't have SFA so... */<br>
+/* other includes */<br>
+<br>
+p_sscript ss = NULL;<br>
+<br>
+/* other code */<br>
+<br>
+void cmd_play(l_int args, l_text arg[])<br>
+{<br>
+  p_play pp = SFA_init();<br>
+  pp->init_file(pp, arg[0]);<br>
+  if (pp) {<br>
+    pp->play_file(pp);<br>
+  }<br>
+}<br>
+<br>
+/* other code */<br>
+<br>
+void my_app_init()<br>
+{<br>
+  /* other code */<br>
+  ss = sscript_init(malloc(sizeof(t_sscript)));<br>
+  ss->define_command(ss, "PLAY", &cmd_play);<br>
+  /* other code */<br>
+}<br>
+<br>
+ Of course somewhere you have to use the compile and
+execute functions.<br>
+.end
+
+.topic errors
+<b>4. Error handling</b><br>
+<br>
+  Many times, SealScript code that is entered by
+ your program's user isn't valid and SealScript
+ cannot compile it. So before execute a non-compiled
+ code (and crash your system) check if there is
+ any compilation error. You can check it using two
+ ways. First is to check if compile function has
+ returned FALSE. If so then there was a compilation
+ error. Second way is after compile's call to check
+ if ss->error.code is something else than SSE_NOTHING.
+ If so then again there was a compilation error. In
+ both cases to determine what compilation error
+ happened and where you have to check ss->error.code
+ (for error code) and ss->error.line (for code line
+ where the compilation error found).<br>
+<br>
+Here is a list with known error codes:<br>
+<br>
+<b>SSE_SYNTAX_ERROR:</b><br>
+   You'll get this if you don't use the normal
+  syntax of a command or if you give invalid
+  parameters to some commands (f.e. if you type
+  OPEN filename FOR COMPRESSING AS file,
+  SealScript will return SSE_SYNTAX_ERROR because
+  doesn't know the COMPRESSING work).<br>
+<br>
+<b>SSE_NOT_ENOUGH_ARGS:</b><br>
+   You'll get this if you don't specify all
+  needed arguments (parameters) to a command.
+  The minimum number of needed arguments is
+  depending on the command. An example here is
+  that if you use the SET command without any
+  parameter.<br>
+<br>
+<b>SSE_LABEL_NOT_FOUND:</b><br>
+   You'll get this if you use the GOTO command
+  with a label that you haven't specified
+  anywhere in your code.<br>
+.end
+
+.topic cmds
+<b>5. SealScript standard commands</b><br>
+<br>
+  Before you read SSL's standard commands you have
+ to know three things about SealScript's syntax:<br>
+<b>First:</b> you can define comments by adding the "'"
+ character in before the comment (note: unlike
+ BASIC, you can't use REM command and you can't
+ add a comment right to a command).<br>
+<b>Second:</b> You can define a label by using the ":"
+ character at the end of a line with one word.
+ That word will be used as a label (f.e.
+ LabelName:)<br>
+and <b>Third:</b> You can specify more than one commands
+ in one line by separating it with the "|" character
+ like this:<br>
+<br>
+Command1 Parameters for command1 | Command2 Pars | ...<br>
+<br>
+example:<br>
+<br>
+IF i = 5 | PRINT "i equals to five" | END<br>
+<br>
+<br>
+ And now here is the list with the commands in
+creation order (from oldest to newest):<br>
+<br>
+<br>
+<b>SET var, value</b><br>
+  Gives to variable VAR the value VALUE<br>
+  example: SET nick, "BadSector"<br>
+<br>
+<b>PRINT [m1[,m2[,m3[,...]]]]</b><br>
+  Shows a message box that contains all parameters
+ in one line.<br>
+  example: PRINT "Time is ", time<br>
+<br>
+<b>IF v1 what v2</b><br>
+  if WHAT is "<>" and v1 equals to v2 then following
+ commands until next END will not be executed. If
+ WHAT is "=" and v1 doesn't equals to v2 also
+ following commands will not be executed.<br>
+  example:<br>
+    IF nick = "BadSector"<br>
+      PRINT "Hello, Bad Sector :)"<br>
+    END<br>
+<br>
+<b>END</b><br>
+  used with IF<br>
+<br>
+<b>ADD x, y  SUB x, y  MUL x, y  DIV x, y</b><br>
+  ADD, SUB, MUL and DIV are used for mathematical
+ functions.<br>
+<br>
+<b>OPEN filename FOR method AS file</b><br>
+  allocates memory and sets info to the FILE
+ variable about filename and method for file
+ handling. filename is a string or a string
+ variable. method is one of:<br>
+   INPUT       for input from text files<br>
+   OUTPUT      for output to text files<br>
+              this remakes the file.<br>
+   APPEND      for output to the end of existing text files (if file
+ doesn't exists, it makes it).<br>
+  Warning! Every variable that has set up with
+  the OPEN command MUST be freed using the
+  CLOSE command.<br>
+  example: OPEN "readme.txt" FOR INPUT AS file<br>
+<br>
+<b>WRITE file, ...</b><br>
+  writes all other parameters from 2 to the
+ FILE (file must be opened with OPEN before or
+ system will probably crash).<br>
+ example: WRITE file, nick<br>
+<br>
+<b>READ file, var</b><br>
+  Reads a line from the FILE and stores its
+ contents to variable VAR.<br>
+ example: READ file, nick<br>
+<br>
+<b>CLOSE file</b><br>
+  Frees allocated memory for FILE.<br>
+  example: CLOSE file<br>
+<br>
+<b>ERASE filename</b><br>
+  Deletes file FILENAME from the disk.<br>
+  example: ERASE "nickinfo.txt"<br>
+<b>BEEP</b><br>
+  makes a sound from the PC Speaker.<br>
+<b>STOP</b><br>
+  stops script's execution<br>
+  example: if option = 4 | STOP | END<br>
+<b>GOTO label</b><br>
+  jumps to label LABEL<br>
+<b>TIME var</b>
+  stores current time to variable VAR in
+ HH:MM:SS format.<br>
+<b>MULTITASK ON|OFF</b><br>
+  enables/disables SEAL/Bad Seal multitasking.
+ If multitasking is enabled then when script
+ is processing something, you can access
+ other programs and windows, else SEAL/Bad
+ Seal will not be accessible. Turning off
+ multitasking can increase the speed about
+ 1000% but it's recommended to be used only
+ in special cases. By default MULTITASK is
+ ON.<br>
+<br>
+.end
+

@@ -1,0 +1,42 @@
+; This is an information file for Bad Desktop
+
+[desktop]
+validate="1"
+
+[DESKTOP.INF]
+hide="1"
+
+[AUTHORS.TXT]
+name="Authors"
+des="Find out who wrote the software you are using now"
+img="/system/bmp/txt.ico,16"
+
+[BUGS.TXT]
+name="Bugs"
+des="Read about known issues with SEAL"
+img="/system/bmp/txt.ico,16"
+
+[BUILD.TXT]
+name="Build Information"
+des="Find out how to build SEAL from sources"
+img="/system/bmp/txt.ico,16"
+
+[CHANGES.TXT]
+name="Changes"
+des="Discover what's changed from version to version"
+img="/system/bmp/txt.ico,16"
+
+[LICENSE.TXT]
+name="License"
+des="Read the license to find out what you can and cannot do"
+img="/system/bmp/txt.ico,16"
+
+[README.TXT]
+name="Readme"
+des="Get a general introduction on how to install and use SEAL"
+img="/system/bmp/txt.ico,16"
+
+[SEALDOS.TXT]
+name="SealDOS Information (old)"
+des="A note about SealDOS, the part of SEAL that lets you run DOS programs"
+img="/system/bmp/txt.ico,16"

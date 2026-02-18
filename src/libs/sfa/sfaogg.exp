@@ -1,0 +1,41 @@
+#ifdef __SEAL_SRS_INFORMATION__ALWAYS_IGNORE  // How to combine an EXP and SRS file
+[SRS]
+Version=1
+
+[Version]
+Major=1
+Minor=0
+Revision=0
+Build=2
+AutoIncrementBuild=1
+
+; If AutoIncrementBuild is set to 1, the Build value is increased by 1 every time
+; you link the file
+
+[__srs_end]
+#endif
+
+DLXUSE_BEGIN
+  LIBLOADS_BEGIN
+  LIBLOADS_END
+  LIBEXPORT_BEGIN
+    LIBEXPORT(ogg_init_driver)
+    LIBEXPORT(ogg_init_file) 
+    LIBEXPORT(ogg_play_file) 
+    LIBEXPORT(ogg_poll_file) 
+    LIBEXPORT(ogg_stop_file) 
+    LIBEXPORT(ogg_pause_file) 
+    LIBEXPORT(ogg_forward_file) 
+    LIBEXPORT(ogg_rewind_file) 
+    LIBEXPORT(ogg_set_pos) 
+    LIBEXPORT(ogg_get_pos) 
+    LIBEXPORT(ogg_get_len_file) 
+    LIBEXPORT(ogg_get_file_info) 
+    LIBEXPORT(ogg_get_friendly_name)
+    LIBEXPORT(ogg_config_driver)
+    LIBEXPORT(ogg_display_about)
+    LIBEXPORT(ogg_close_file)
+    LIBEXPORT(ogg_terminate_driver)
+    LIBEXPORT(ogg_send_custom_message)
+  LIBEXPORT_END
+DLXUSE_END

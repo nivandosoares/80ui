@@ -1,0 +1,5 @@
+[definition]
+link="/programs/seal/dskimage.s2a"
+icon16="/system/bmp/icons/35floppy.ico,16"
+icon32="/system/bmp/icons/35floppy.ico,32"
+title="Disk Imager"

@@ -1,0 +1,37 @@
+; This is an information file for Bad Desktop
+
+[desktop]
+validate="1"
+
+[DESKTOP.INF]
+hide="1"
+
+[CRUEL.HLP]
+name="Cruel Help"
+des="Help for the game Cruel"
+img="/system/bmp/help.ico,16"
+
+[FIFTEEN.HLP]
+name="Fifteen Help"
+des="Help for the game Fifteen"
+img="/system/bmp/help.ico,16"
+
+[GOLF.HLP]
+name="Golf Help"
+des="Help for the game Golf"
+img="/system/bmp/help.ico,16"
+
+[KLONDIKE.HLP]
+name="Klondike Help"
+des="Help for the game Klondike"
+img="/system/bmp/help.ico,16"
+
+[SOL.HLP]
+name="Peg Solitaire Help"
+des="Help for the game Peg Solitaire"
+img="/system/bmp/help.ico,16"
+
+[TOWOFHAN.HLP]
+name="Tower of Hanoi Help"
+des="Help for the game Tower of Hanoi"
+img="/system/bmp/help.ico,16"

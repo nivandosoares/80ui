@@ -1,0 +1,8 @@
+DLXUSE_BEGIN
+  LIBLOADS_BEGIN
+  LIBLOADS_END
+  LIBEXPORT_BEGIN
+    LIBEXPORT(print_text_from_buffer)
+    LIBEXPORT(print_text_from_file)
+  LIBEXPORT_END
+DLXUSE_END
